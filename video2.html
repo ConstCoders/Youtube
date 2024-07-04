@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Page Transitions</title>
+</head>
+<style>
+    .fade{
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+    .fade-in{
+        opacity: 1;
+    }
+</style>
+<body>
+    <div id="page" class="fade">
+        <h1>Welcome To My Channel</h1>
+        <p>Click Button to Navigate</p>
+        <button onclick="navigate()" >Go to Page 2</button>
+    </div>
+</body>
+<script>
+    document.getElementById('page').classList.add('fade-in');
+
+
+    function navigate(){
+        document.getElementById('page').classList.remove('fade-in');
+        setTimeout(()=>{
+            window.location.href = 'video.html';
+        },500);
+    }
+</script>
+</html>

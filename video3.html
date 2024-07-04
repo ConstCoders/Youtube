@@ -1,0 +1,40 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Elements</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+</head>
+<style>
+    .slider{
+        width: 80%;
+        margin: 50px auto;
+    }
+
+    .slider img{
+        width: 100%;
+    }
+</style>
+<body>
+    <div class="slider">
+        <div><img src="image1.jpg" alt="Image 1"></div>
+        <div><img src="image2.jpg" alt="Image 2"></div>
+        <div><img src="image3.jpg" alt="Image 3"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+          $(document).ready(function(){
+            $('.slider').slick({
+                autoplay: true,
+                autoplaySpeed:2000,
+                dots: true
+            })
+          })
+    </script>
+</body>
+
+</html>

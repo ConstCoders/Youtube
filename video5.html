@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microinteractions</title>
+</head>
+<style>
+    .like-button{
+        background-color: #ff0000;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        transition: transform 0.2s;
+    }
+
+    .like-button:active{
+        transform: scale(1.1);
+    }
+</style>
+<body>
+    <button class="like-button" onclick="like()" >Like</button>
+
+    <script>
+        function like(){
+            alert('You Liked this Video!');
+        }
+    </script>
+</body>
+</html>
